@@ -18,5 +18,14 @@
     <string name="pizza_description">Description</string>
     <string name="pizza_price">Price</string>
     <string name="order_date">Order Date</string>
+    <!-- New strings for quantity actions -->
+    <string name="decrease_quantity">Decrease quantity</string>
+    <string name="increase_quantity">Increase quantity</string>
+    <string name="quantity">Quantity</string>
+
+    <!-- Strings for cart screen -->
+    <string name="your_cart">Your Cart</string>
+    <string name="checkout">Checkout</string>
+    <string name="total_price">Total: %1$.2f MAD</string>
 </resources>
 

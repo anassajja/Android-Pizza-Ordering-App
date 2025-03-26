@@ -10,6 +10,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.example.orderingapp.R;
 import com.example.orderingapp.models.Pizza;
 import java.util.List;
+import java.util.Locale;
 
 public class PizzaAdapter extends RecyclerView.Adapter<PizzaAdapter.PizzaViewHolder> {
     private final List<Pizza> pizzaList;
@@ -22,7 +23,7 @@ public class PizzaAdapter extends RecyclerView.Adapter<PizzaAdapter.PizzaViewHol
     @NonNull
     @Override
     public PizzaViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_pizza, parent, false);
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_pizza_home, parent, false);
         return new PizzaViewHolder(view);
     }
 
@@ -32,7 +33,7 @@ public class PizzaAdapter extends RecyclerView.Adapter<PizzaAdapter.PizzaViewHol
         holder.pizzaImage.setImageResource(pizza.getImageResId());
         holder.pizzaName.setText(pizza.getName());
         holder.pizzaDescription.setText(pizza.getDescription());
-        holder.pizzaPrice.setText(String.format("$%.2f", pizza.getPrice()));
+        holder.pizzaPrice.setText(String.format(Locale.getDefault(), "%.2f MAD", pizza.getPrice()));
 
         holder.itemView.setOnClickListener(v -> {
             if (listener != null) {

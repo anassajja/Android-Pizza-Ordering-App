@@ -25,7 +25,7 @@ public class HomeActivity extends AppCompatActivity {
         pizzaRecyclerView = findViewById(R.id.pizzaRecyclerView);
         pizzaRecyclerView.setLayoutManager(new GridLayoutManager(this, 2));
 
-        // Initialize pizza list
+        // Initialize pizza list with descriptions
         pizzaList = Arrays.asList(
                 new Pizza("Margherita", R.drawable.pizza_margherita, "Delicious tomato and cheese pizza.", 8.99),
                 new Pizza("Pepperoni", R.drawable.pizza_pepperoni, "Classic pepperoni pizza.", 10.99),
@@ -39,8 +39,12 @@ public class HomeActivity extends AppCompatActivity {
 
         // Setup item click listener
         pizzaAdapter.setOnItemClickListener(position -> {
+            Pizza selectedPizza = pizzaList.get(position);
             Intent intent = new Intent(HomeActivity.this, CartActivity.class);
-            intent.putExtra("pizza", pizzaList.get(position).getName());
+            intent.putExtra("pizzaName", selectedPizza.getName());
+            intent.putExtra("pizzaPrice", selectedPizza.getPrice());
+            intent.putExtra("pizzaImageResId", selectedPizza.getImageResId());
+            intent.putExtra("pizzaDescription", selectedPizza.getDescription()); // Add this line
             startActivity(intent);
         });
     }
