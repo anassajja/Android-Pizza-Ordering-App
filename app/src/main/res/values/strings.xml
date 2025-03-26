@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Pizza Ordering App</string>
+    <string name="splash_screen_title">Welcome to OrderingApp</string>
+    <string name="home_title">Menu</string>
+    <string name="cart_title">Your Cart</string>
+    <string name="checkout_title">Checkout</string>
+    <string name="confirmation_title">Order Confirmed!</string>
+    <string name="confirmation_message">Thank you for your order. Payment will be collected upon delivery.</string>
+    <string name="phone_hint">Phone Number</string>
+    <string name="address_hint">Delivery Address</string>
+    <string name="checkout_button">Checkout</string>
+    <string name="confirm_button">Confirm Order</string>
+    <string name="fill_fields_warning">Please fill all fields</string>
+    <string name="pizza_menu_description">List of available pizzas</string>
+    <string name="pizza_image_description">Image of a pizza</string>
+    <string name="pizza_name">Pizza Name</string>
+    <string name="menu">Menu</string>
+    <string name="pizza_description">Description</string>
+    <string name="pizza_price">Price</string>
+    <string name="order_date">Order Date</string>
+</resources>
+
