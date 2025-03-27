@@ -27,10 +27,12 @@ public class HomeActivity extends AppCompatActivity {
 
         // Initialize pizza list with descriptions
         pizzaList = Arrays.asList(
-                new Pizza("Margherita", R.drawable.pizza_margherita, "Delicious tomato and cheese pizza.", 8.99),
-                new Pizza("Pepperoni", R.drawable.pizza_pepperoni, "Classic pepperoni pizza.", 10.99),
-                new Pizza("Hawaiian", R.drawable.pizza_hawaiian, "Pineapple and ham pizza.", 11.99),
-                new Pizza("Veggie", R.drawable.pizza_veggie, "Loaded with fresh vegetables.", 9.99)
+                new Pizza("Margherita Pizza", R.drawable.pizza_margherita, "Delicious tomato and cheese pizza.", 8.99),
+                new Pizza("Pepperoni Pizza", R.drawable.pizza_pepperoni, "Classic pepperoni pizza.", 10.99),
+                new Pizza("Hawaiian Pizza", R.drawable.pizza_hawaiian, "Pineapple and ham pizza.", 11.99),
+                new Pizza("Veggie Pizza", R.drawable.pizza_veggie, "Loaded with fresh vegetables.", 9.99),
+                new Pizza("BBQ Chicken Pizza", R.drawable.pizza_margherita, "Spicy BBQ chicken pizza.", 12.99),
+                new Pizza("Meat Lovers Pizza", R.drawable.pizza_veggie, "Packed with meat toppings.", 13.99)
         );
 
         // Set adapter

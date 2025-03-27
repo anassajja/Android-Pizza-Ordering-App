@@ -13,7 +13,7 @@
         android:layout_height="100dp"
         android:contentDescription="@string/pizza_image_description"
         android:scaleType="centerCrop"
-        android:src="@drawable/pizza_margherita"
+        android:src="@drawable/pizza_pepperoni"
         tools:ignore="ContentDescription,ImageContrastCheck" />
 
     <TextView

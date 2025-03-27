@@ -14,7 +14,7 @@
     <string name="pizza_menu_description">List of available pizzas</string>
     <string name="pizza_image_description">Image of a pizza</string>
     <string name="pizza_name">Pizza Name</string>
-    <string name="menu">Menu</string>
+    <string name="menu">Pizza Menu</string>
     <string name="pizza_description">Description</string>
     <string name="pizza_price">Price</string>
     <string name="order_date">Order Date</string>
